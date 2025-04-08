@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.invitation {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.name:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+}
+
+.date-box {
+    background-color: #3498db;
+    color: white;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 30px;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.details {
+    margin: 30px 0;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f1c40f;
+    opacity: 0;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .invitation {
+        padding: 30px 20px;
+    }
+}
